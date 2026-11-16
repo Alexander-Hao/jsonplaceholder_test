@@ -1,0 +1,10 @@
+get_post_cases:
+  - id: "post_1_exists"
+    post_id: 1
+    expected_status: 200
+  - id: "post_100_exists"
+    post_id: 100
+    expected_status: 200
+  - id: "post_99999_not_found"
+    post_id: 99999
+    expected_status: 404
